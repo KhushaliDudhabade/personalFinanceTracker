@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 90%;
+}
+
+.sort-div{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    align-items: center;
+    margin-bottom: 1rem;  
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 400px;
+}

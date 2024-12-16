@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+:root{
+  --theme:#2970ff;
+  --black:#000;
+  --white:hsl(0, 0%, 100%);
+  --grey:0px 0px 30px 8px rgba(227,227,227,0.75);
+  
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +17,85 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.code{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+input{
+  font-family: "Montserrat", sans-serif;
+}
+
+.custom-input{
+  border-width: 0;
+  border-bottom-width: 2px;
+  width: 100%;
+  padding: 0.3rem 0rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.custom-input:focus{
+  outline: none;
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.custom-input::placeholder{
+  color: grey;
+}
+
+.btn{
+  color: var(--theme);
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem !important;
+  background-color: #fff;
+  border: 1px solid var(--theme);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+  height: auto !important;
+}
+
+.btn:hover{
+  background-color: var(--theme);
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn-blue{
+  background-color: var(--theme);
+  color: #fff;
+}
+
+.btn-blue:hover{
+  background-color: #fff !important;
+  color: var(--theme);
+  transition: all 0.3s;
+}
+
+.input-flex{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  width:90%;
+  box-shadow: var(--grey);
+  border-radius: 0.5rem;
+  padding: 0rem 0.5rem;
+}
+.input-flex input{
+  width:90%;
+  padding:0.5rem;
+  border:0;
+  font-size: 16px;
+}
+.input-flex input:focus{
+  outline: none;
 }
